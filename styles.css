@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.video-player {
+    flex: 3;
+    padding: 10px;
+}
+
+.video-list {
+    flex: 1;
+    padding: 10px;
+    border-left: 1px solid #ddd;
+}
+
+.video-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.video-list li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.video-list li:hover {
+    background-color: #f0f0f0;
+}
