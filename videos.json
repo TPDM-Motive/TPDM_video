@@ -1,38 +1,22 @@
 [
-    { "title": "0_a", "src": "videos/0_a.mp4" },
-    { "title": "1_a", "src": "videos/1_a.mp4" },
-    { "title": "2_a", "src": "videos/2_a.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" },
-    { "title": "demo", "src": "videos/demo.mp4" }
+    { 
+        "title": "0_a", 
+        "src": "videos/0_a.mp4", 
+        "times": [0, 2, 3] 
+    },
+    { 
+        "title": "1_a", 
+        "src": "videos/1_a.mp4", 
+        "times": [0, 3, 5]  
+    },
+    { 
+        "title": "2_a", 
+        "src": "videos/2_a.mp4", 
+        "times": [0, 1, 4] 
+    },
+    { 
+        "title": "demo", 
+        "src": "videos/demo.mp4", 
+        "times": [0, 2, 5] 
+    }
 ]
