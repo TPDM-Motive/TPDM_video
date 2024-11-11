@@ -43,13 +43,19 @@ body {
 }
 
 .status-item {
-    padding: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-right: 1px;
     background-color: grey;
     color: white;
     text-align: center;
     z-index: 10;
     /* cursor: pointer; */
+    max-width: 150px; 
+    word-wrap: break-word; 
+    white-space: normal; 
 }
 
 .status-item.active-1 {
