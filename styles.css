@@ -19,6 +19,7 @@ body {
 
 .video-player {
     flex: 3;
+    position: relative; /* Add position relative to contain absolute child */
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -34,11 +35,46 @@ body {
     background-color: #000;
 }
 
+.status-box {
+    position: absolute; /* Position absolute to place it on top-left */
+    top: 10px;
+    left: 10px;
+    display: flex;
+}
+
+.status-item {
+    padding: 40px;
+    margin-right: 1px;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    z-index: 10;
+    /* cursor: pointer; */
+}
+
+.status-item.active-1 {
+    background-color: red;
+}
+
+.status-item.active-2 {
+    background-color: yellow;
+    color: black; /* Change text color to black for better visibility */
+}
+
+.status-item.active-3 {
+    background-color: green;
+}
+
 .video-list {
     flex: 1;
     padding: 10px;
     border-left: 1px solid #ddd;
     overflow-y: auto;
+}
+
+.video-list h2 {
+    margin-top: 0;
+    text-align: center;
 }
 
 .video-list ul {
