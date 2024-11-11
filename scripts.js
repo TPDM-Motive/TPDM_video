@@ -4,7 +4,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const videoList = document.getElementById('video-list');
     const statusItems = document.querySelectorAll('.status-item');
 
-    let activationTimes = [0, 5, 10]; // Default activation times
+    let activationTimes = [0, 0, 0]; // Default activation times
+    let statusTexts = ["Action A", "Trans", "Action B"]; // Default texts
+
+    // Function to update status texts
+    function updateStatusTexts(texts) {
+        statusItems.forEach((item, index) => {
+            if (texts[index]) {
+                item.textContent = texts[index];
+            }
+        });
+    }
+
 
     // Function to clear all active classes
     function clearActiveClasses() {
@@ -41,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 li.textContent = videoItem.title;
                 li.setAttribute('data-src', videoItem.src);
                 li.setAttribute('data-times', JSON.stringify(videoItem.times));
+                li.setAttribute('data-texts', JSON.stringify(videoItem.text));
                 videoList.appendChild(li);
             });
 
@@ -49,6 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (e.target.tagName === 'LI') {
                     const src = e.target.getAttribute('data-src');
                     activationTimes = JSON.parse(e.target.getAttribute('data-times'));
+                    statusTexts = JSON.parse(e.target.getAttribute('data-texts'));
+                    updateStatusTexts(statusTexts);
                     videoSource.setAttribute('src', src);
                     video.load();
                     video.play();
